@@ -1,0 +1,238 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="store.Master.cs" Inherits="Efredia.Site1" %>
+<!DOCTYPE html>
+
+<!----
+ __             _               _   _
+/ _\_   _ _ __ | |__   ___  ___| |_(_)_ __   __ _  ___ _ __
+\ \| | | | '_ \| '_ \ / _ \/ __| __| | '_ \ / _` |/ _ \ '__|
+_\ \ |_| | | | | | | | (_) \__ \ |_| | | | | (_| |  __/ |
+\__/\__, |_| |_|_| |_|\___/|___/\__|_|_| |_|\__, |\___|_|
+    |___/                                   |___/
+             Site dev by Bastien Languedoc
+                Twitter : aslun_fr
+              INTERDIT DE REPRODUIRE LE SITE
+  ------>
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Pré-commande - Synhostinger</title>
+
+    <meta name="description" content="Hébergeur de sites internet, d'infrastructures Virtuelles (VPS) avec une aide au projet personnalisé. Avec une infrastructures dans la Ville de Beauvais." />
+    <meta name="keywords" content="VPS, Beauvais, hébergeur made in french, location de serveur virtuel, vps, vps pro, technologie Intel - Xeon, disque SAS">
+    <meta name="Publisher" content="Synhostinger [contact@synhostinger.fr]" />
+    <meta name="Geography" content="France">
+    <meta name="country" content="France">
+    <meta name="Language" content="French">
+    <meta name="Copyright" content="Association Synhostinger">
+    <meta name="robots" content="index, follow">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Hébergeur de sites internet, d'infrastructures Virtuelles (VPS) avec une aide au projet personnalisé. Avec une infrastructures dans la Ville de Beauvais." />
+    <meta name="twitter:title" content="@ViewBag.Project - @ViewBag.Title" />
+    <meta name="twitter:site" content="@ViewBag.Twitter" />
+    <meta name="twitter:creator" content="@ViewBag.Twitter" />
+
+    <!---- Meta property ------>
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@ViewBag.Project - @ViewBag.Title" />
+    <meta property="og:description" content="Hébergeur de sites internet, d'infrastructures Virtuelles (VPS) avec une aide au projet personnalisé. Avec une infrastructures dans la Ville de Beauvais." />
+    <meta property="og:url" content="https://www.synhostinger.com" />
+    <meta property="og:site_name" content="www.synhostinger.com" />
+
+    <!-- Favicon -->
+    <link href="../Models/hosting2019/img/synhicon_color.ico" rel="shortcut icon" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/Models/hosting2019/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/Models/hosting2019/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/Models/hosting2019/css/magnific-popup.css" />
+    <link rel="stylesheet" href="/Models/hosting2019/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/Models/hosting2019/css/style.css" />
+    <link rel="stylesheet" href="/Models/hosting2019/css/animate.css" />
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header section -->
+    <header class="header-section">
+        <div class="container">
+            <a href="/" class="site-logo">
+                <img src="../Models/hosting2019/img/logo.png" alt="logo">
+            </a>
+            <!-- Switch button -->
+            <div class="nav-switch">
+                <div class="ns-bar"></div>
+            </div>
+            <div class="header-right">
+                <ul class="main-menu">
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/About">Info</a></li>
+                    <li><a href="/Vps">Offre VPS</a></li>
+                    <li><a href="/Web">Offre Web</a></li>
+                       <!-- <li><a href=""></a></li>-->
+                </ul>
+
+            </div>
+    </header>
+
+    <!-- Header section end -->
+    <!--Body-->
+    <!-- Page Top section -->
+    <section class="page-top-section set-bg" data-setbg="/Models/hosting2019/img/page-top-bg/1.jpg">
+        <div class="container">
+            <h2>Configuration de votre produit</h2>
+          
+        </div>
+
+    </section>
+    <!-- Page Top section end -->
+
+    <div id="body">
+       
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+</head>
+<body>
+    <br />
+  <body>
+    <br />
+    <form id="form1" runat="server">
+        <div>
+             <center><asp:Label ID="Label20" runat="server" Text="Erreur vous n'avez pas choisit votre produits !" Font-Bold="True" ForeColor="Maroon"></asp:Label></center> 
+            <br />
+      <center>    <asp:Button ID="Button2" runat="server" Text="Retour" OnClick="Button2_Click" /></center> 
+            <center>
+            &nbsp;<br />
+                <asp:Label ID="labelname" runat="server" Text="Nom Prénom" Visible="False"></asp:Label>
+                <br />
+                <asp:TextBox ID="named" runat="server" required="required" OnTextChanged="named_textchanged" Visible="False"></asp:TextBox>
+                <br />
+                <asp:Label ID="labelemail" runat="server" Text="E-mail" Visible="False"></asp:Label>
+                <br />
+                <asp:TextBox ID="emailtextbox" runat="server" OnTextChanged="email_TextChanged" TextMode="Email" required="required" Visible="False"></asp:TextBox>
+                 <br />
+                <asp:Label ID="Tel" runat="server" Text="Numéro de téléphone" Visible="true"></asp:Label>
+                <br />
+                <asp:TextBox ID="TelBox" runat="server" OnTextChanged="TelBox_TextChanged" TextMode="number" required="required" Visible="False"></asp:TextBox>
+
+            <br />
+&nbsp;<asp:Label ID="Label3" runat="server" Text="Utilité de votre produit" Visible="False"></asp:Label>
+            <br />
+                <asp:TextBox ID="project_details" runat="server" TextMode="MultiLine" required="required" OnTextChanged="details_textchanged" Height="139px" Visible="False" Width="441px"></asp:TextBox>
+                <br />
+                Produit :
+                <asp:Label ID="Label21" runat="server" Text="Label"></asp:Label>
+                <br />
+                <br />
+                <asp:Button ID="Validation" runat="server" OnClick="validation_click" Text="Validation" />
+            <br />
+&nbsp;<br />
+                <br />
+                <br />
+            </center>
+            <br /> 
+            
+            <br />
+        </div>
+    </form>
+</body>
+
+        
+<!-- Footer top section -->
+    <section class="footer-top-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <div class="footer-widget about-widget">
+                        <img src="../Models/hosting2019/img/logo.png" alt="">
+                        <p>Synhostinger est une association de loi 1901 qui héberge des services web et aide les projets. Nous disposons de notre proprez infrastructure technique, AS, adresses ip et opérateur telecom. Association basée à Beauvais - France.</p>
+                        <div class="social-links">
+                            <a href="http://redirect.synhostinger.com/social.aspx?url=https://www.facebook.com/synhostinger/"><i class="fa fa-facebook"></i></a>
+                            <a href="https://redirect.synhostinger.com/social.aspx?url=https://twitter.com/synhostinger_fr"><i class="fa fa-twitter"></i></a>>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h5 class="fw-title">Produits</h5>
+                        <ul>
+                            <li><a href="/cart/product-project.aspx?web=product">Hébergement Web</a></li>
+                            <li><a href="/cart/product-project.aspx?mail=product">Hébergement E-mail</a></li>
+                            <li><a href="/cart/product-project.aspx?vps=product">Serveurs VPS</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-4">
+                    <div class="footer-widget">
+                        <h5 class="fw-title">Accompagnement projets</h5>
+                        <ul>
+                            <li><a href="#">Faire une demande</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-widget">
+                    <h5 class="fw-title">Synhostinger</h5>
+                    <ul>
+                        <font color="white">
+                            <li>N° RNA : W601008273</li>
+                            <li>N° SIRET : 89092299000019</li>
+                            <li>Adresse : 12 IMPASSE PAUL DELANSAY</li>
+                        </font>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="/">Accueil</a></li>
+                    <li><a href="/About">Qui sommes nous ?</a></li>
+                    <li><a href="/Project">Nos services</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>
+
+                    Copyright &copy; Synhostinger  @DateTime.Now.Year All rights reserved - Efredia V2.0
+                </p>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../Models/hosting2019/js/jquery-3.2.1.min.js"></script>
+    <script src="../Models/hosting2019/js/bootstrap.min.js"></script>
+    <script src="../Models/hosting2019/js/owl.carousel.min.js"></script>
+    <script src="../Models/hosting2019/js/jquery.magnific-popup.min.js"></script>
+    <script src="../Models/hosting2019/js/circle-progress.min.js"></script>
+    <script src="../Models/hosting2019/js/main.js"></script>
+
+</body>
+</html>

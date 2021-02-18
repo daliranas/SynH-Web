@@ -1,0 +1,193 @@
+﻿<!--INDEX PAGE /view/Home/vps.cshtml-->
+<section id="service" class="service">
+    <div class="container">
+        <div class="row">
+            <div class="main_service text-center">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single_service wow fadeIn" data-wow-duration=".6s">
+                        <div class="single_service_icon icon_one">
+                            <a href=""><i class="fa fa-server"></i></a>
+                        </div>
+                        <div class="single_service_deatels">
+                            <h4>@ViewBag.col1title</h4>
+                            <p>@ViewBag.col1text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single_service wow fadeIn" data-wow-duration="1.2s">
+                        <div class="single_service_icon icon_two">
+                            <a href=""><i class="fa fa-sellsy"></i></a>
+                        </div>
+                        <div class="single_service_deatels">
+                            <h4>@ViewBag.col2title</h4>
+                            <p>@ViewBag.col2text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single_service wow fadeIn" data-wow-duration="1.7s">
+                        <div class="single_service_icon icon_three">
+                            <a href=""><i class="fa fa-hdd-o"></i></a>
+                        </div>
+                        <div class="single_service_deatels">
+                            <h4>@ViewBag.col3title</h4>
+                            <p>@ViewBag.col3text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="single_service wow fadeIn" data-wow-duration="2s">
+                        <div class="single_service_icon icon_four">
+                            <a href=""><i class="fa fa-comments"></i></a>
+                        </div>
+                        <div class="single_service_deatels">
+                            <h4>@ViewBag.col4title</h4>
+                            <p>@ViewBag.col4text</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="pricingtop" class="pricingtop">
+    <div class="overlay">
+        <div class="container">
+            <div class="main_pricingtop"></div>
+        </div>
+    </div>
+</section>
+<section id="pricing" class="pricing">
+    <div class="container">
+        <div class="row">
+            <div class="main_pricing">
+
+                <div class="pricing_content">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_pricing pricing_color_one wow fadeIn" data-wow-duration=".6s">
+                            <div class="pricing_head text-center">
+                                <div class="icon_area p_icon_one">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <h3>
+                                    @ViewBag.VPS1<h3>
+                                        <div class="separator"></div>
+                            </div>
+                            <figure class="single_pricing_figure">
+                                <ul>
+                                    <li><span class="princing_name">Nombre de vCPU</span> <span class="princing_price princing_price_one">@ViewBag.vcpu1</span></li>
+                                    <li><span class="princing_name">Mémoire (RAM)</span> <span class="princing_price princing_price_one">@ViewBag.ram1</span></li>
+                                    <li><span class="princing_name">Espace disque (Go)</span> <span class="princing_price princing_price_one">@ViewBag.disk1</span></li>
+                                    <li><span class="princing_name">Anti-DDoS</span> <span class="princing_price princing_price_one">@ViewBag.ddos1</span></li>
+                                    <li><span class="princing_name">Système</span> <span class="princing_price princing_price_one">@ViewBag.os1</span></li>
+
+                                </ul>
+                                <div class="separator"></div>
+                            </figure>
+
+                            <footer class="pricing_footer text-center">
+                                <h3</span>@ViewBag.price1<span class="dolor">€ <span class="month">/Mois  </span></h3>
+                                <div class="smallseparator separetor_one"></div>
+                                <a href="@ViewBag.url1">Commander</a>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_pricing pricing_color_two wow fadeIn" data-wow-duration="1.2s">
+                            <div class="pricing_head text-center">
+                                <div class="icon_area p_icon_two">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <h3>
+                                    @ViewBag.VPS2<h3>
+                                        <div class="separator"></div>
+                            </div>
+                            <figure class="single_pricing_figure">
+                                <ul>
+                                    <li><span class="princing_name">Nombre de vCPU</span> <span class="princing_price princing_price_one">@ViewBag.vcpu2</span></li>
+                                    <li><span class="princing_name">Mémoire (RAM)</span> <span class="princing_price princing_price_one">@ViewBag.ram2</span></li>
+                                    <li><span class="princing_name">Espace disque (Go)</span> <span class="princing_price princing_price_one">@ViewBag.disk2</span></li>
+                                    <li><span class="princing_name">Anti-DDoS</span> <span class="princing_price princing_price_one">@ViewBag.ddos2</span></li>
+                                    <li><span class="princing_name">Système</span> <span class="princing_price princing_price_one">@ViewBag.os2</span></li>
+                                </ul>
+                                <div class="separator"></div>
+                            </figure>
+
+                            <footer class="pricing_footer text-center">
+                                <h3</span>@ViewBag.price2<span class="dolor">€ <span class="month">/Mois  </span></h3>
+                                <div class="smallseparator separetor_one"></div>
+                                <a href="@ViewBag.url2">Commander</a>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_pricing pricing_color_three wow fadeIn" data-wow-duration="1.8s">
+                            <div class="pricing_head text-center">
+                                <div class="icon_area p_icon_three">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <h3>
+                                    @ViewBag.VPS3<h3>
+                                        <div class="separator"></div>
+                            </div>
+                            <figure class="single_pricing_figure">
+                                <ul>
+                                    <li><span class="princing_name">Nombre de vCPU</span> <span class="princing_price princing_price_one">@ViewBag.vcpu3</span></li>
+                                    <li><span class="princing_name">Mémoire (RAM)</span> <span class="princing_price princing_price_one">@ViewBag.ram3</span></li>
+                                    <li><span class="princing_name">Espace disque (Go)</span> <span class="princing_price princing_price_one">@ViewBag.disk3</span></li>
+                                    <li><span class="princing_name">Anti-DDoS</span> <span class="princing_price princing_price_one">@ViewBag.ddos3</span></li>
+                                    <li><span class="princing_name">Système</span> <span class="princing_price princing_price_one">@ViewBag.os3</span></li>
+                                </ul>
+                                <div class="separator"></div>
+                            </figure>
+
+
+                            <footer class="pricing_footer text-center">
+                                <h3</span>@ViewBag.price3<span class="dolor">€ <span class="month">/Mois  </span></h3>
+                                <div class="smallseparator separetor_one"></div>
+                                <a href="@ViewBag.url3">Commander</a>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single_pricing pricing_color_four wow fadeIn" data-wow-duration="2.3s">
+                            <div class="pricing_head text-center">
+                                <div class="icon_area p_icon_four">
+                                    <i class="fa fa-star"></i>
+                                </div>
+                                <h3>Offre custom</h3>
+                                <div class="separator"></div>
+                            </div>
+
+                            <figure class="single_pricing_figure">
+                                <ul>
+                                    <li><span class="princing_name">Nombre de vCPU</span> <span class="princing_price princing_price_one">X</span></li>
+                                    <li><span class="princing_name">Mémoire (RAM)</span> <span class="princing_price princing_price_one">X</span></li>
+                                    <li><span class="princing_name">Espace disque (Go)</span> <span class="princing_price princing_price_one">X</span></li>
+                                    <li><span class="princing_name">Anti-DDoS</span> <span class="princing_price princing_price_one">10G</span></li>
+                                    <li><span class="princing_name">Système</span> <span class="princing_price princing_price_one">X</span></li>
+                                </ul>
+                                <div class="separator"></div>
+                            </figure>
+
+                            <footer class="pricing_footer text-center">
+                                <p>Selon vos besoins !</p>
+                                <h3</span>@ViewBag.pricecustom<span class="dolor">€ <span class="month">/Mois  </span></h3>
+                                <div class="smallseparator separetor_one"></div>
+                                <a href="@ViewBag.urlcustom">Commander</a>
+                            </footer>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
