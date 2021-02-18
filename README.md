@@ -1,4 +1,4 @@
-# ![logo](https://www.synh.fr/wp-content/uploads/brizy/1188/assets/images/iW=167&iH=94&oX=0&oY=18&cW=167&cH=58/logo.png)
+# ![Efredia]()
 
 # Efredia - Framework
 
