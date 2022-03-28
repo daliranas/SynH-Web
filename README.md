@@ -1,5 +1,3 @@
-# ![Efredia]()
-
 # Efredia - Framework
 
 - Page de Maintenance avec Auto-Rewrite
